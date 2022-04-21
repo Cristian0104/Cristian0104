@@ -1,0 +1,66 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+#header-img{
+    height: 5em;
+    width: 10em;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #8B9EB7;
+}
+#nav-bar {
+    margin-right: 5%;
+}
+#nav-bar a{
+    color: rgb(87, 84, 84);
+    margin: 3em;
+    text-decoration: none;
+}
+#form,h2{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+h2 {
+    margin-top: 5em;
+}
+#form input{
+    margin-bottom: 10px;
+}
+#products{
+    align-self: center;
+}
+#submit{
+    background-color: gold;
+    margin: 10px;
+}
+.product{
+    display: flex;
+    
+}
+#product-img{
+    height: 5em;
+    width: auto;
+    padding-right: 1em;
+}
+#video {
+    align-self: center;
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }

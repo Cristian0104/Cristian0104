@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="formulario"> 
+    <div class="titulo">
+        <h1 id="title">Formulario</h1>
+        <p id="description">Rellene los campos vacíos con sus datos</p>
+    </div>
+    <div class="form">
+    <form id="survey-form">
+      <label id="name-label">Nombre:</label>
+      <input id="name" type="text" required placeholder="Name"><br>
+      
+      <label id="email-label">Email:</label>
+      <input id="email" type="email" required placeholder="email"><br>
+      
+      <label id="number-label">Número:</label>
+      <input id="number" type="number" required min="9" max="50" placeholder="Number"><br>
+      
+        <select id="dropdown">
+            <option value = "Java" selected type="radio">Java</option>
+            <option value = "JavaScript" type="radio">JavaScript</option>
+            <option value = "Python" type="radio">Python</option>
+        </select><br>
+      <div class="radio-button">
+        <label>Clase 1<input type="radio" value="1"  name="clase"/></label>
+      </div><br>
+      <div class="radio-button">
+        <label>Clase 2<input type="radio" value="2"  name="clase"/></label>
+      </div><br>
+  <div class="check-box">
+  <label><input type="checkbox" id="cbox1" value="first_checkbox"> Oscuro</label>
+    <label><input type="checkbox" id="cbox2" value="first_checkbox"> Claro</label><br>
+  </div><br>
+  <textarea  placeholder="Escribe"></textarea><br>
+  <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
